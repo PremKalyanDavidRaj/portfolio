@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #0044a4; /* Soft Grey background */
+    color: #2C3E50; /* Dark Grey text */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #2C3E50; /* Deep Blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #3498DB; /* Light Blue */
+}
+
+/* About Me Section */
+#about {
+    background: #fff;
+    padding: 40px 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+#about p {
+    max-width: 55%;
+    margin-left: 20px;
+}
+
+#about a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2C3E50; /* Deep Blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about a:hover {
+    background: #3498DB; /* Light Blue */
+}
+
+/* Projects Section */
+#projects {
+    background: #ECF0F1; /* Soft Grey */
+    padding: 40px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin: 20px 0 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project button {
+    padding: 10px 20px;
+    background: #3498DB; /* Light Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.project button:hover {
+    background: #2C3E50; /* Deep Blue */
+}
+
+/* Resume Section */
+#resume {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#resume iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#resume a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2C3E50; /* Deep Blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#resume a:hover {
+    background: #3498DB; /* Light Blue */
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: #3498DB; /* Light Blue */
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+#testimonials blockquote {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+#testimonials p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    background: #ECF0F1; /* Soft Grey */
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact form label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #2C3E50; /* Deep Blue */
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact form button:hover {
+    background: #3498DB; /* Light Blue */
+}
+
+/* Footer */
+footer {
+    background: #2C3E50; /* Deep Blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about p {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    #projects {
+        padding: 20px 0;
+    }
+
+    #resume iframe {
+        height: 400px;
+    }
+
+    #testimonials blockquote {
+        font-size: 1em;
+    }
+}
